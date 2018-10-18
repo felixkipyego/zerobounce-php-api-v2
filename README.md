@@ -21,7 +21,7 @@ $zba = new ZeroBounceAPI('YOUR_API_KEY');
 print_r($zba->get_credits());
 
 //instantiate a validation object following a call to /validate and print individual elements
-$validation = $zba->validate('email@address.com, 'IP');
+$validation = $zba->validate('email@address.com', 'IP');
 echo $validation['address'];
 echo $validation['status'];
 
